@@ -1,0 +1,58 @@
+﻿@using QimErp.ServiceContracts.Dto
+@model QimErp.ServiceContracts.Dto.AddUserInput
+@{
+    ViewData["Title"] = "Add User";
+}
+
+<h2>@ViewData["Title"].</h2>
+
+<form asp-controller="Home" asp-action="Add" asp-route-returnurl="@Url.Action("Index")" method="post" class="form-horizontal">
+    <h4>Create a new user.</h4>
+    <hr />
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="form-group">
+        <label asp-for="UserAccount" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input asp-for="UserAccount" class="form-control" />
+            <span asp-validation-for="UserAccount" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label asp-for="UserName" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input asp-for="UserName" class="form-control" />
+            <span asp-validation-for="UserName" class="text-danger"></span>
+        </div>
+    </div>
+   
+    <div class="form-group">
+        <label asp-for="Password" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input asp-for="Password" class="form-control" type="password" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label asp-for="Email" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label asp-for="CellPhone" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input asp-for="CellPhone" class="form-control" />
+            <span asp-validation-for="CellPhone" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

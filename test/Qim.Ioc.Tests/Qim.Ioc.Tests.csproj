@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <PreserveCompilationContext>true</PreserveCompilationContext>
+    <AssemblyName>Qim.Ioc.Tests</AssemblyName>
+    <PackageId>Qim.Ioc.Tests</PackageId>
+      </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Framework\Qim.Infrastructure\Qim.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\src\Framework\Qim.Ioc.Autofac\Qim.Ioc.Autofac.csproj" />
+    <ProjectReference Include="..\..\src\Framework\Qim.Ioc.DryIoc\Qim.Ioc.DryIoc.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.7.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
+    <PackageReference Include="Microsoft.DotNet.InternalAbstractions" Version="1.0.500-preview2-1-003177" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.0.0" />
+    <PackageReference Include="xunit" Version="2.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{82a7f48d-3b50-4b1e-b82e-3ada8210c358}" />
+  </ItemGroup>
+
+
+</Project>

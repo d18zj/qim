@@ -1,0 +1,32 @@
+{
+  //"language": "en-US",
+  "authors": [ "QimSoft" ],
+  "copyright": "Copyright ? QimSoft 2016",
+  "dependencies": {
+    "Microsoft.Extensions.DependencyInjection.Abstractions": "1.1.0",
+    "Qim.Infrastructure": "1.0.0-*"
+  },
+  "description": "Qim.Ioc.Castle",
+  "frameworks": {
+    //"netstandard1.6": {
+    //  "dependencies": {
+    //    "Microsoft.CSharp": "4.0.1",
+    //    "System.Collections": "4.0.11",
+    //    //"System.ComponentModel": "4.0.1",
+    //    "System.Reflection.TypeExtensions": "4.1.0",
+    //    "System.Runtime": "4.1.0"
+    //    //"System.Runtime.InteropServices": "4.1.0"
+    //  },
+    //  "imports": "netcoreapp1.0"
+    //},
+    "net451": {
+      "dependencies": {
+        "Castle.Windsor": "3.3.0",
+        "System.Runtime": "4.0.10"
+      }
+    }
+  },
+  "title": "Qim.Ioc.Castle",
+  "version": "1.0.0-*",
+  "rules": []
+}

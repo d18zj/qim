@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>QimErp.Repositories</AssemblyName>
+    <PackageId>QimErp.Repositories</PackageId>
+    <Copyright>Copyright © QimSoft 2016</Copyright>
+    <Company>QimSoft</Company>
+    <Authors>QimSoft</Authors>
+    <Description>QimErp.Repositories</Description>
+    <Product>QimErp</Product>
+   
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Framework\Qim.Framework\Qim.Framework.csproj" />
+    <ProjectReference Include="..\Framework\Qim.EntitiFrameworkCore\Qim.EntitiFrameworkCore.csproj" />
+    <ProjectReference Include="..\Framework\Qim.Infrastructure\Qim.Infrastructure.csproj" />
+    <ProjectReference Include="..\QimErp.Domain\QimErp.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+
+
+</Project>

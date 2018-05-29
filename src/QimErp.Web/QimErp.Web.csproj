@@ -1,0 +1,70 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <PreserveCompilationContext>true</PreserveCompilationContext>
+    <AssemblyName>QimErp.Web</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <PackageId>QimErp.Web</PackageId>
+    <UserSecretsId>aspnet-QimErp.Web-20161217054613</UserSecretsId>
+    <Company>QimSoft</Company>
+    <Authors>QimSoft</Authors>
+    <Description>QimErp.Web</Description>
+    <Product>QimErp</Product>
+    <Copyright>Copyright © QimSoft 2016</Copyright>
+   
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="wwwroot\**\*;Views\**\*;Areas\**\Views">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Framework\Qim.AspNetCore\Qim.AspNetCore.csproj" />
+    <ProjectReference Include="..\Framework\Qim.AutoMapper\Qim.AutoMapper.csproj" />
+    <ProjectReference Include="..\Framework\Qim.EntitiFrameworkCore\Qim.EntitiFrameworkCore.csproj" />
+    <ProjectReference Include="..\Framework\Qim.Framework\Qim.Framework.csproj" />
+    <ProjectReference Include="..\Framework\Qim.Infrastructure\Qim.Infrastructure.csproj" />
+    <ProjectReference Include="..\Framework\Qim.Ioc.Autofac\Qim.Ioc.Autofac.csproj" />
+    <ProjectReference Include="..\Framework\Qim.Ioc.DryIoc\Qim.Ioc.DryIoc.csproj" />
+    <ProjectReference Include="..\Framework\Qim.Logging.NLog\Qim.Logging.NLog.csproj" />
+    <ProjectReference Include="..\QimErp.Application\QimErp.Application.csproj" />
+    <ProjectReference Include="..\QimErp.Infrastructure\QimErp.Infrastructure.csproj" />
+    <ProjectReference Include="..\QimErp.Repositories\QimErp.Repositories.csproj" />
+    <ProjectReference Include="..\QimErp.ServiceContracts\QimErp.ServiceContracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics" Version="2.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Server.IISIntegration" Version="2.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel" Version="2.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.0.3">
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="2.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.0.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="2.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="2.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="2.0.2" />
+  </ItemGroup>
+
+ 
+
+  <Target Name="PrepublishScript" BeforeTargets="PrepareForPublish" Condition=" '$(IsCrossTargetingBuild)' != 'true' ">
+    <Exec Command="bower install" />
+    <Exec Command="dotnet bundle" />
+  </Target>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="BundlerMinifier.Core" Version="2.2.301" />
+  </ItemGroup>
+
+</Project>

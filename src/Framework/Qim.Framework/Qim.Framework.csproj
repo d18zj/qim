@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>QimSoft Framework</Description>
+    <Copyright>Copyright © QimSoft 2016</Copyright>
+    <AssemblyTitle>Qim.Framework</AssemblyTitle>
+    <Authors>QimSoft</Authors>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Qim.Framework</AssemblyName>
+    <PackageId>Qim.Framework</PackageId>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Qim.Infrastructure\Qim.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Linq.Queryable" Version="4.3.0" />
+  </ItemGroup>
+
+
+</Project>

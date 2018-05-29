@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'" />
+
+  <PropertyGroup Label="Configuration" />
+
+  <PropertyGroup>
+    <Description>Qim.Ioc.Autofac</Description>
+    <Copyright>Copyright © QimSoft 2016</Copyright>
+    <AssemblyTitle>Qim.Ioc.Autofac</AssemblyTitle>
+    <Authors>QimSoft</Authors>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Qim.Ioc.Autofac</AssemblyName>
+    <PackageId>Qim.Ioc.Autofac</PackageId>
+    <!--<PackageTargetFallback Condition=" '$(TargetFramework)' == 'netstandard1.6' ">$(PackageTargetFallback);netcoreapp1.0</PackageTargetFallback>-->
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Qim.Infrastructure\Qim.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.8.1" />
+    <PackageReference Include="Castle.Core" Version="4.2.1" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.4.1" />
+    <PackageReference Include="System.Collections" Version="4.3.0" />
+    <PackageReference Include="System.Reflection.TypeExtensions" Version="4.4.0" />
+    <PackageReference Include="System.Runtime" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  
+
+</Project>

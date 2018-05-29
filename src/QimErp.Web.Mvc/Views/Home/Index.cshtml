@@ -1,0 +1,25 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+<div>
+    <ul>
+        @{
+            var list = (List<string>)ViewData["testMsg"];
+            foreach (var item in list)
+            {
+                <li>@item</li>
+            }
+        }
+    </ul>
+
+</div>
+</body>
+</html>

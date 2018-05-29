@@ -1,0 +1,55 @@
+﻿@using QimErp.ServiceContracts.Dto
+@model List<QimErp.ServiceContracts.Dto.UserListDto>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>Welcome!</h1>
+
+<div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">
+        UserList
+        <div style="float:right">@Html.ActionLink("Add","Add")</div>
+
+    </div>
+
+    <!-- Table -->
+    <table class="table">
+        <thead>
+            <tr>
+                <td>UserAccount</td>
+                <td>UserName</td>
+                <td>Email</td>
+                <td>CellPhone</td>
+                <td>&nbsp;</td>
+            </tr>
+        </thead>
+        @if (Model.Count == 0)
+        {
+            <tr>
+                <td colspan="5">
+                    <h1>Not any users.</h1>
+                </td>
+            </tr>
+        }
+        else
+        {
+            foreach (var user in Model)
+            {
+                <tr>
+                    <td>@user.UserAccount</td>
+                    <td>@user.UserName</td>
+                    <td>@user.Email</td>
+                    <td>@user.CellPhone</td>
+                    <td>
+                        <a href="#">
+                            Edit
+                        </a>&nbsp;|&nbsp;<a href="#">Remove</a>
+                    </td>
+                </tr>
+            }
+        }
+
+    </table>
+</div>

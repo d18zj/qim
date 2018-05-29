@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>QimErp.ServiceContracts</AssemblyName>
+    <PackageId>QimErp.ServiceContracts</PackageId>
+    <Company>QimSoft</Company>
+    <Authors>QimSoft</Authors>
+    <Product>QimErp</Product>
+    <Description>QimErp.ServiceContracts</Description>
+    <Copyright>Copyright © QimSoft 2016</Copyright>
+    
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Framework\Qim.Infrastructure\Qim.Infrastructure.csproj" />
+    <ProjectReference Include="..\QimErp.Infrastructure\QimErp.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+
+</Project>

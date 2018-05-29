@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <AssemblyName>QimErp.Infrastructure</AssemblyName>
+    <PackageId>QimErp.Infrastructure</PackageId>
+    <Copyright>Copyright © QimSoft 2016</Copyright>
+    <Company>QimSoft</Company>
+    <Authors>QimSoft</Authors>
+    <Description>QimErp.Infrastructure</Description>
+    <Product>QimErp</Product>
+   
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Framework\Qim.Infrastructure\Qim.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  
+
+</Project>

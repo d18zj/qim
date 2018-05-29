@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'" />
+
+  <PropertyGroup Label="Configuration" />
+
+  <PropertyGroup>
+    <Description>Qim.Ioc.DryIoc</Description>
+    <Copyright>Copyright © QimSoft 2016</Copyright>
+    <AssemblyTitle>Qim.Ioc.DryIoc</AssemblyTitle>
+    <Authors>QimSoft</Authors>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Qim.Ioc.DryIoc</AssemblyName>
+    <PackageId>Qim.Ioc.DryIoc</PackageId>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Qim.Infrastructure\Qim.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Castle.Core" Version="4.2.1" />
+    <PackageReference Include="DryIoc.dll" Version="2.12.10" />
+    <PackageReference Include="System.Reflection.Extensions" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  
+
+</Project>

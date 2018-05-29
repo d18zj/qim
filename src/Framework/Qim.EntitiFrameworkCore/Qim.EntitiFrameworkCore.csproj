@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Qim.EntitiFrameworkCore</AssemblyName>
+    <PackageId>Qim.EntitiFrameworkCore</PackageId>
+    <Company>QimSoft</Company>
+    <Description>Qim.EntitiFrameworkCore</Description>
+    <Authors>QimSoft</Authors>
+    <Copyright>Copyright © QimSoft 2016</Copyright>
+    <!--<PackageTargetFallback Condition=" '$(TargetFramework)' == 'netstandard1.6' ">$(PackageTargetFallback);netcoreapp1.0</PackageTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>-->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Qim.Framework\Qim.Framework.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+</Project>

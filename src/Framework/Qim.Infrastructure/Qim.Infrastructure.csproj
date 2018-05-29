@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>QimSoft Infrastructure</Description>
+    <Copyright>Copyright © QimSoft 2016</Copyright>
+    <AssemblyTitle>Qim.Infrastructure</AssemblyTitle>
+    <Authors>QimSoft</Authors>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Qim.Infrastructure</AssemblyName>
+    <PackageId>Qim.Infrastructure</PackageId>
+    <RootNamespace>Qim</RootNamespace>
+    <!--<PackageTargetFallback Condition=" '$(TargetFramework)' == 'netstandard1.6' ">$(PackageTargetFallback);netcoreapp1.0</PackageTargetFallback>
+    -->
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="project.lock.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="System.Reflection.TypeExtensions" Version="4.4.0" />
+    <PackageReference Include="System.Runtime.Loader" Version="4.3.0" />
+    <PackageReference Include="System.Security.Claims" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  
+
+</Project>

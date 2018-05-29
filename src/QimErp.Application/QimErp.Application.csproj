@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>QimErp.Application</AssemblyName>
+    <PackageId>QimErp.Application</PackageId>
+    <Copyright>Copyright © QimSoft 2016</Copyright>
+    <Description>QimErp.Application</Description>
+    <Company>QimSoft</Company>
+    <Authors>QimSoft</Authors>
+    <Product>QimErp</Product>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Framework\Qim.AutoMapper\Qim.AutoMapper.csproj" />
+    <ProjectReference Include="..\Framework\Qim.Framework\Qim.Framework.csproj" />
+    <ProjectReference Include="..\Framework\Qim.Infrastructure\Qim.Infrastructure.csproj" />
+    <ProjectReference Include="..\QimErp.Domain\QimErp.Domain.csproj" />
+    <ProjectReference Include="..\QimErp.ServiceContracts\QimErp.ServiceContracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Security.Claims" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+ 
+</Project>
